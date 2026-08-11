@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarVibe - Find Your Dream Car</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f14;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+      background: #111720;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff4d30;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: 60px 7%;
+      background: linear-gradient(135deg, #101820, #05070a);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ff4d30;
+    }
+
+    .hero p {
+      color: #b8c0cc;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff4d30;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cars {
+      padding: 60px 7%;
+    }
+
+    .cars h2 {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .car-card {
+      background: #151c25;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid #252e39;
+      transition: 0.3s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-8px);
+      border-color: #ff4d30;
+    }
+
+    .car-image {
+      height: 180px;
+      background: linear-gradient(135deg, #252d38, #11151b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 65px;
+    }
+
+    .car-info {
+      padding: 20px;
+    }
+
+    .car-info h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #ff4d30;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .specs {
+      color: #aeb6c2;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #080b0f;
+      color: #89919c;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🚗 CarVibe</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#cars">Cars</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Find Your <span>Dream Car</span></h1>
+      <p>
+        CarVibe पर अपनी पसंद की शानदार कार खोजें।
+        नई और प्रीमियम कारों की जानकारी एक ही जगह।
+      </p>
+      <a href="#cars" class="btn">Explore Cars</a>
+    </div>
+  </section>
+
+  <section class="cars" id="cars">
+    <h2>Featured Cars</h2>
+
+    <div class="car-grid">
+
+      <div class="car-card">
+        <div class="car-image">🚘</div>
+        <div class="car-info">
+          <h3>BMW 3 Series</h3>
+          <div class="price">₹45 Lakh</div>
+          <div class="specs">Petrol • Automatic • 1998cc</div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-image">🏎️</div>
+        <div class="car-info">
+          <h3>Mercedes C-Class</h3>
+          <div class="price">₹58 Lakh</div>
+          <div class="specs">Petrol • Automatic • Luxury</div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-image">🚙</div>
+        <div class="car-info">
+          <h3>Range Rover</h3>
+          <div class="price">₹1.2 Crore</div>
+          <div class="specs">Diesel • Automatic • 4x4</div>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="about">
+    <p>© 2026 CarVibe. All Rights Reserved.</p>
+  </footer>
+
+</body>
+  </html>
